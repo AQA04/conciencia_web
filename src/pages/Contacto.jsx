@@ -21,7 +21,7 @@ const Contacto = () => {
     },
     {
       name: "Miguel Angel Herrera Jaramillo",
-      role: "Investigación Digital",
+      role: "Full-Stack Developer",
       focus: "Liderazgo en investigación, transparencia algorítmica y arquitectura de datos.",
       icon: <Users className="w-6 h-6 text-green-500" />,
       linkedin: "https://www.linkedin.com/in/miguel-angel-herrera-7429b4295/"
@@ -29,7 +29,7 @@ const Contacto = () => {
     {
       name: "Juan Jose Montoya Palacio",
       role: "Pseudo-investigador",
-      focus: "Debia hacer la interfaz pero nos retraso. Pero realizo parte de la investigacion.",
+      focus: "No hizo la interfaz, y no puso su nombre. Pero realizo parte de la investigacion.",
       icon: <Users className="w-6 h-6 text-purple-500" />,
       image: "/JuanJose.png",
       linkedin: "https://www.linkedin.com/in/juan-jose-montoya-palacio-656193281/"

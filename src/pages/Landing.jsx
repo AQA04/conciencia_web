@@ -80,7 +80,7 @@ const Landing = () => {
       </div>
 
       {/* Logos Strip */}
-      <div className="absolute bottom-0 w-full bg-brand-dark/80 backdrop-blur-md border-t border-white/10 py-6">
+      <div className="absolute bottom-0 w-full z-20 bg-brand-dark/80 backdrop-blur-md border-t border-white/10 py-6">
         <div className="w-[90%] max-w-7xl mx-auto flex flex-wrap justify-between items-center opacity-70 gap-y-4">
           <a href="https://www.ieee.org/" target="_blank" rel="noopener noreferrer" className="block p-3 text-gray-400 hover:text-white font-bold text-sm md:text-base uppercase tracking-widest transition-colors">IEEE</a>
           <a href="https://www.acm.org/" target="_blank" rel="noopener noreferrer" className="block p-3 text-gray-400 hover:text-white font-bold text-sm md:text-base uppercase tracking-widest transition-colors">ACM</a>
