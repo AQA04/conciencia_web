@@ -27,11 +27,12 @@ const Contacto = () => {
       linkedin: "https://www.linkedin.com/in/miguel-angel-herrera-7429b4295/"
     },
     {
-      name: "Juan Jose",
+      name: "Juan Jose Montoya Palacio",
       role: "Pseudo-investigador",
       focus: "Debia hacer la interfaz pero nos retraso. Pero realizo parte de la investigacion.",
       icon: <Users className="w-6 h-6 text-purple-500" />,
-      linkedin: ""
+      image: "/JuanJose.png",
+      linkedin: "https://www.linkedin.com/in/juan-jose-montoya-palacio-656193281/"
     }
   ];
 
