@@ -110,6 +110,23 @@ const Realidades = () => {
           </div>
         </section>
 
+        {/* Entrevista Video */}
+        <section className="mt-20 mb-16">
+          <h2 className="text-2xl font-black text-brand-dark mb-8 border-b-2 border-brand-dark/10 pb-4">
+            Entrevista a otro profesional
+          </h2>
+          <div className="relative w-full overflow-hidden rounded-2xl shadow-lg border border-gray-200" style={{ paddingTop: '56.25%' }}>
+            <iframe
+              className="absolute top-0 left-0 w-full h-full"
+              src="https://www.youtube.com/embed/SOfv4J4k_5U"
+              title="Entrevista a otro profesional"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            ></iframe>
+          </div>
+        </section>
+
         {/* Navigation Footer */}
         <div className="mt-16 flex justify-between items-center border-t-2 border-brand-dark/10 pt-8">
           <Link to="/fundamentos" className="inline-flex items-center text-gray-500 font-bold hover:text-brand-dark transition-colors">
