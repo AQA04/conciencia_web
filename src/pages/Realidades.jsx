@@ -125,6 +125,9 @@ const Realidades = () => {
               allowFullScreen
             ></iframe>
           </div>
+          <p className="text-gray-600 text-sm mt-4">
+             Docente de psicologia - Jonathan Andres Hernandez Calle
+          </p>
         </section>
 
         {/* Navigation Footer */}
