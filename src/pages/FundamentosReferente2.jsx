@@ -1,5 +1,6 @@
 import { BookOpen, Scale, ArrowRight, Cpu, Users, Eye, Zap, Globe } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 
 const eticaProfesional = [
   {
@@ -76,7 +77,7 @@ const referencias = [
 // ─── Page ─────────────────────────────────────────────────────────────────────
 
 const Fundamentos = () => {
-
+  const [refOpen, setRefOpen] = useState(false);
 
   return (
     <div className="min-h-screen bg-brand-light pt-28 pb-20">
@@ -98,7 +99,7 @@ const Fundamentos = () => {
             Ética Profesional y Responsabilidad Social
           </h2>
           <p className="text-gray-600 leading-relaxed mb-10">
-            Si el Referente 1 preguntó qué significa actuar bien, este pregunta qué significa <em>ejercer bien una profesión</em>. La ética profesional no es la simple aplicación de principios generales a un oficio: es un ámbito con lógica propia donde convergen el contrato social implícito de una profesión, las normativas vigentes y el juicio del agente individual.
+            La ética profesional no es la simple aplicación de principios generales a un oficio: es un ámbito con lógica propia donde convergen el contrato social implícito de una profesión, las normativas vigentes y el juicio del agente individual.
           </p>
 
           {/* Tarjetas de pilares */}
@@ -152,25 +153,39 @@ const Fundamentos = () => {
         </section>
 
         {/* ── Referencias ────────────────────────────────────────────────── */}
-        <section className="mb-16">
-          <div className="flex items-center gap-3 mb-4">
-            <BookOpen className="w-5 h-5 text-brand-dark" />
-            <h2 className="text-2xl font-black text-brand-dark">Referencias</h2>
-          </div>
-          <p className="text-xs text-gray-400 mb-6 italic">
-            Formato APA 7.
-          </p>
-          <ol className="space-y-3">
-            {referencias.map((ref, i) => (
-              <li
-                key={i}
-                className="text-sm text-gray-600 leading-relaxed pl-8 -indent-8"
-              >
-                {ref}
-              </li>
-            ))}
-          </ol>
-        </section>
+        {/* ── Referencias ────────────────────────────────────────────────── */}
+<section className="mb-16">
+  <button
+    onClick={() => setRefOpen(prev => !prev)}
+    className="flex items-center gap-3 mb-4 group w-full text-left"
+  >
+    <BookOpen className="w-5 h-5 text-brand-dark" />
+    <h2 className="text-2xl font-black text-brand-dark">Referencias</h2>
+    <div className={`ml-auto w-7 h-7 rounded-full flex items-center justify-center transition-colors ${refOpen ? 'bg-brand-dark text-white' : 'bg-gray-100 text-gray-400'}`}>
+      <svg className={`w-3 h-3 transition-transform duration-300 ${refOpen ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
+        <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+      </svg>
+    </div>
+  </button>
+
+  {refOpen && (
+    <>
+      <p className="text-xs text-gray-400 mb-6 italic">
+        Formato APA 7.
+      </p>
+      <ol className="space-y-3">
+        {referencias.map((ref, i) => (
+          <li
+            key={i}
+            className="text-sm text-gray-600 leading-relaxed pl-8 -indent-8"
+          >
+            {ref}
+          </li>
+        ))}
+      </ol>
+    </>
+  )}
+</section>
 
         {/* Footer Link */}
         <div className="mt-12 flex justify-between items-center border-t-2 border-brand-dark/10 pt-8">

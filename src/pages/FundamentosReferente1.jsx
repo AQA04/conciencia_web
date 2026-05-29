@@ -40,7 +40,7 @@ Esta tensión no se resuelve eligiendo un bando. Un profesional formado en ambas
   {
     num: '03',
     autor: 'Maquiavelo y Nietzsche',
-    concepto: 'Crítica Realista',
+    concepto: 'Crítica',
     color: 'border-red-400',
     accent: 'text-red-400',
     bg: 'bg-red-400',
@@ -140,6 +140,7 @@ const VozCard = ({ voz, isOpen, onClick }) => (
 
 const Fundamentos = () => {
   const [openVoz, setOpenVoz] = useState(0);
+  const [refOpen, setRefOpen] = useState(false);
 
   const toggle = (i) => setOpenVoz(openVoz === i ? null : i);
 
@@ -170,16 +171,13 @@ const Fundamentos = () => {
           <span>Mayo 2026</span>
         </div>
 
-        {/* Introducción 
+        {/* Introducción */}
         <section className="mb-16">
-          <p className="text-lg text-gray-700 leading-relaxed mb-4">
-            Pensar la ética profesional del ingeniero informático exige más que enunciar principios: requiere reconocer que ninguna tradición filosófica agota por sí sola la complejidad de las decisiones técnicas contemporáneas. Este referente articula cinco voces que, lejos de coincidir, se interpelan mutuamente y ofrecen al profesional un repertorio crítico para habitar los vacíos éticos del campo.
-          </p>
           <p className="text-lg text-gray-700 leading-relaxed">
             A continuación, cada posición filosófica se presenta en su densidad propia, en tensión productiva con las demás, y con aplicación directa a situaciones reales del ejercicio profesional. La polifonía no es debilidad teórica: es el instrumento adecuado para un dominio donde la certeza moral es, precisamente, lo que está en disputa.
           </p>
         </section>
-        */}
+        
         {/* ── Referente 1 ────────────────────────────────────────────────── */}
         <section className="mb-20">
           <div className="flex items-center justify-between gap-3 mb-2 flex-wrap">
@@ -233,24 +231,37 @@ const Fundamentos = () => {
 
         {/* ── Referencias ────────────────────────────────────────────────── */}
         <section className="mb-16">
-          <div className="flex items-center gap-3 mb-4">
-            <BookOpen className="w-5 h-5 text-brand-dark" />
-            <h2 className="text-2xl font-black text-brand-dark">Referencias</h2>
-          </div>
-          <p className="text-xs text-gray-400 mb-6 italic">
-            Formato APA 7.
-          </p>
-          <ol className="space-y-3">
-            {referencias.map((ref, i) => (
-              <li
-                key={i}
-                className="text-sm text-gray-600 leading-relaxed pl-8 -indent-8"
-              >
-                {ref}
-              </li>
-            ))}
-          </ol>
-        </section>
+  <button
+    onClick={() => setRefOpen(prev => !prev)}
+    className="flex items-center gap-3 mb-4 group w-full text-left"
+  >
+    <BookOpen className="w-5 h-5 text-brand-dark" />
+    <h2 className="text-2xl font-black text-brand-dark">Referencias</h2>
+    <div className={`ml-auto w-7 h-7 rounded-full flex items-center justify-center transition-colors ${refOpen ? 'bg-brand-dark text-white' : 'bg-gray-100 text-gray-400'}`}>
+      <svg className={`w-3 h-3 transition-transform duration-300 ${refOpen ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
+        <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+      </svg>
+    </div>
+  </button>
+
+  {refOpen && (
+    <>
+      <p className="text-xs text-gray-400 mb-6 italic">
+        Formato APA 7.
+      </p>
+      <ol className="space-y-3">
+        {referencias.map((ref, i) => (
+          <li
+            key={i}
+            className="text-sm text-gray-600 leading-relaxed pl-8 -indent-8"
+          >
+            {ref}
+          </li>
+        ))}
+      </ol>
+    </>
+  )}
+</section>
 
         {/* Footer Link */}
         <div className="mt-12 flex justify-between items-center border-t-2 border-brand-dark/10 pt-8">
