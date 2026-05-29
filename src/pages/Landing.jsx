@@ -91,7 +91,7 @@ const Landing = () => {
                 to="/fundamentos"
                 className="w-full sm:w-auto bg-brand-yellow hover:bg-yellow-400 text-brand-dark px-8 h-14 flex items-center justify-center rounded-lg font-bold text-lg transition-colors group"
               >
-                Iniciar lectura
+                Leamos un poco mas
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Link>
             </div>
