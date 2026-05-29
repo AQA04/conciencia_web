@@ -16,9 +16,7 @@ const voces = [
     resumen: 'La prudencia práctica como facultad deliberativa ante lo particular.',
     desarrollo: `Aristóteles inaugura la tradición occidental de la ética de la virtud al sostener que el bien humano consiste en una actividad del alma conforme a la excelencia, desarrollada a lo largo de una vida (Aristóteles, trad. 1985). Su concepto central, phrónesis o prudencia práctica, designa la capacidad de deliberar correctamente sobre lo que conviene hacer en situaciones particulares donde las reglas generales resultan insuficientes.
 
-La phrónesis no es la aplicación mecánica de principios: es el juicio que reconoce cuándo un principio no alcanza y exige razonamiento situado. Para el ingeniero informático, esto tiene una traducción directa: cada arquitectura de software, cada decisión sobre el tratamiento de datos, cada elección entre eficiencia y transparencia, se produce en un contexto que ningún manual puede anticipar completamente. La phrónesis es, en términos clásicos, lo que hoy se enfrenta cada vez que un dilema técnico carece de protocolo: decidir sin algoritmo.
-
-Esta tensión es productiva: la ética aristotélica no prescribe soluciones, cultiva la capacidad de encontrarlas. De ahí que Vallor (2016) la recupere explícitamente como fundamento para pensar las virtudes tecnomorales del siglo XXI.`,
+La phrónesis no es la aplicación mecánica de principios: es el juicio que reconoce cuándo un principio no alcanza y exige razonamiento situado. Para el ingeniero informático, esto tiene una traducción directa: cada arquitectura de software, cada decisión sobre el tratamiento de datos, cada elección entre eficiencia y transparencia, se produce en un contexto que ningún manual puede anticipar completamente. La phrónesis es, en términos clásicos, lo que hoy se enfrenta cada vez que un dilema técnico carece de protocolo: decidir sin algoritmo.`,
   },
   {
     num: '02',
