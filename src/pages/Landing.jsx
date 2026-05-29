@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { ArrowRight, Cpu, Search } from 'lucide-react';
+import { ArrowRight, Cpu} from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const phrases = [

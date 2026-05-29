@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Mail, UserCircle, Code, Send, Zap, Shield, Users, ArrowLeft } from 'lucide-react';
+import {UserCircle, Code, Zap, Shield, Users, ArrowLeft } from 'lucide-react';
 
 const Contacto = () => {
   const team = [
@@ -21,8 +21,8 @@ const Contacto = () => {
     },
     {
       name: "Miguel Angel Herrera Jaramillo",
-      role: "Full-Stack Developer",
-      focus: "Liderazgo en investigación, transparencia algorítmica y arquitectura de datos.",
+      role: "Ingeniero de Datos",
+      focus: "Liderazgo en investigación, transparencia algorítmica y arquitectura.",
       icon: <Users className="w-6 h-6 text-green-500" />,
       linkedin: "https://www.linkedin.com/in/miguel-angel-herrera-7429b4295/"
     },
