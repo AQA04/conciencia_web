@@ -121,14 +121,8 @@ const Landing = () => {
               </p>
 
               <p className="text-gray-300/90 text-base md:text-lg leading-relaxed font-light">
-                Nuestro propósito es ofrecer herramientas para deliberar éticamente
-                en un campo donde rara vez hay respuestas absolutas. Cada artículo
-                confronta dilemas reales con un repertorio que va desde la filosofía
-                clásica hasta los códigos deontológicos de la ACM y la IEEE, y los
-                traduce al terreno donde el profesional realmente se juega su
-                integridad:{' '}
                 <span className="text-brand-yellow font-medium">
-                  las decisiones que no tienen solución limpia, solo costos que
+                  Las decisiones que no tienen solución limpia, solo costos que
                   alguien debe asumir con lucidez.
                 </span>
               </p>
